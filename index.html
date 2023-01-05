@@ -35,15 +35,15 @@
        </div>
        <div id="in-progress">
         <div id="card-header">IN PROGRESS</div>
-            <div id="card-contents" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div id="card-contents" class="open" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
        </div>
        <div id="in-review">
             <div id="card-header">IN REVIEW</div>
-            <div id="card-contents" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div id="card-contents" class="in-progress" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
        </div>
         <div id="done">
             <div id="card-header">DONE</div>
-            <div id="card-contents" ondrop="drop(event)" ondragover="allowDrop(event)">    
+            <div id="card-contents" class="in-review" ondrop="drop(event)" ondragover="allowDrop(event)">    
         </div>
        </div>
     </main>
